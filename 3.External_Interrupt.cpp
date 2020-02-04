@@ -22,7 +22,9 @@ void Interrupt_pushButton()
 
 int main()
 {
-
+    led1.write(OFF);
+    led2.write(OFF);
+    led3.write(OFF);
     User_Button.fall(&Interrupt_pushButton);  //Interrupt to change tempo
     while (true)
     {
