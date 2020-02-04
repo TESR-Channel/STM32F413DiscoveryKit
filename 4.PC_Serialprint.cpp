@@ -12,8 +12,6 @@ int main()
     UART.baud(115200);
     printf("Hello World !\r\n");
 
-    printf("Hello World !\n");
-
     while(1) 
     {
         thread_sleep_for(100); // 1 second
