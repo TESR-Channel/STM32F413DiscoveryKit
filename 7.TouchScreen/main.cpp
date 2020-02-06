@@ -40,7 +40,7 @@ int main()
             BSP_LCD_SetTextColor(LCD_COLOR_GREEN);
             BSP_LCD_FillCircle(x1, y1, 20);
 
-            wait_ms(10);
+            thread_sleep_for(10);
         }
     }
 }
