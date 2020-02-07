@@ -5,7 +5,7 @@ DigitalOut led1(LED1);
 /* No need Serial to UART just usb debugger. */
 Serial UART(SERIAL_TX, SERIAL_RX);
 
-/* External interrupt Handeller */
+/* External interrupt handler */
 void UARTIrq();
 
 int main()
