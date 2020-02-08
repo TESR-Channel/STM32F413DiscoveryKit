@@ -1,7 +1,7 @@
 #include "mbed.h"
-#include "BSP_DISCO_F413ZH\\Drivers\\BSP\\STM32F413H-Discovery\\stm32f413h_discovery.h"
-#include "BSP_DISCO_F413ZH\\Drivers\\BSP\\STM32F413H-Discovery\\stm32f413h_discovery_ts.h"
-#include "BSP_DISCO_F413ZH\\Drivers\\BSP\\STM32F413H-Discovery\\stm32f413h_discovery_lcd.h"
+#include "stm32f413h_discovery.h"
+#include "stm32f413h_discovery_ts.h"
+#include "stm32f413h_discovery_lcd.h"
 
 TS_StateTypeDef  TS_State = {0};
 
