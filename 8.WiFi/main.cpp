@@ -74,7 +74,7 @@ int scan_demo(WiFiInterface *wifi)
 
 int main()
 {
-    printf("WiFi example\n");
+    printf("WiFi example\n"); // Serial Buad Rate 9600
 
 #ifdef MBED_MAJOR_VERSION
     printf("Mbed OS version %d.%d.%d\n\n", MBED_MAJOR_VERSION, MBED_MINOR_VERSION, MBED_PATCH_VERSION);
