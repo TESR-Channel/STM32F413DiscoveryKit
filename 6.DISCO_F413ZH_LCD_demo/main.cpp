@@ -9,7 +9,7 @@ int main()
     BSP_LCD_Clear(LCD_COLOR_WHITE);
 
     BSP_LCD_DisplayStringAt(0, LINE(1), (uint8_t *)"MBED EXAMPLE", CENTER_MODE);
-    thread_sleep_for(2);
+    thread_sleep_for(2000);
     BSP_LCD_Clear(LCD_COLOR_GREEN);
     BSP_LCD_SetBackColor(LCD_COLOR_GREEN);
     BSP_LCD_SetTextColor(LCD_COLOR_BLACK);
