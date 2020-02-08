@@ -1,0 +1,21 @@
+{
+    "config": {
+        "wifi-shield": {
+            "help": "Options are internal, WIFI_ESP8266, WIFI_IDW0XX1, WIFI_ISM43362",
+            "value": "WIFI_ISM43362"
+        },
+        "wifi-ssid": {
+            "help": "WiFi SSID",
+            "value": "\"Anoney Potter WiFi\""
+        },
+        "wifi-password": {
+            "help": "WiFi Password",
+            "value": "\"025399332\""
+        }
+    },
+    "target_overrides": {
+        "*": {
+            "platform.stdio-convert-newlines": true
+        }
+    }
+}
