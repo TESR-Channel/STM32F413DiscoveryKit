@@ -1,5 +1,5 @@
 #include "mbed.h"
-#include "Lib_DISCO_F413ZH\\Drivers\\BSP\\STM32F413H-Discovery\\stm32f413h_discovery_lcd.h"
+#include "stm32f413h_discovery_lcd.h"
 
 int main()
 {
