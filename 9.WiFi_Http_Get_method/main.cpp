@@ -78,7 +78,7 @@ void http_demo(NetworkInterface *net)
     TCPSocket socket;
     nsapi_error_t response;
 
-    printf("Sending HTTP request to www.arm.com...\n");
+    printf("Sending HTTP request to www.google.com...\n");
 
     // Open a socket on the network interface, and create a TCP connection to www.arm.com
     socket.open(net);
