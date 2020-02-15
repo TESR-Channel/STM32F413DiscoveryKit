@@ -2,7 +2,8 @@
  
 Timer t;
  
-int main() {
+int main() 
+{
     t.start();
     printf("Hello World!\n");
     t.stop();
