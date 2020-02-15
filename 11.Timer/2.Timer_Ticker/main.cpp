@@ -10,7 +10,8 @@ void led_toggle()
     led1=!led1;       
 }
  
-int main(){
+int main()
+{
     time_up.attach(&led_toggle, 0.2);
     while(true) 
     {
