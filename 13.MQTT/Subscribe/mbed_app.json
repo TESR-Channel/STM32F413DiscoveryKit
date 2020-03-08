@@ -1,0 +1,35 @@
+{
+    "macros": [
+      "MBEDTLS_MPI_MAX_SIZE=2048",
+      "MBEDTLS_MPI_WINDOW_SIZE=1",
+      "MBED_HEAP_STATS_ENABLED=1",
+      "MBED_STACK_STATS_ENABLED=1",
+      "MBED_MEM_TRACING_ENABLED=1"
+   ],
+    "config": {
+        "main-stack-size": {
+            "value": 4096
+        },
+        "thread-stack-size": {
+            "value": 2000
+        },
+        "wifi-shield": {
+            "help": "Options are internal, WIFI_ESP8266, WIFI_IDW0XX1, WIFI_ISM43362",
+            "value": "WIFI_ISM43362"
+        },
+        "wifi-ssid": {
+            "help": "WiFi SSID",
+            "value": "\"Anoney Potter WiFi\""
+        },
+        "wifi-password": {
+            "help": "WiFi Password",
+            "value": "\"025399332\""
+        }
+    },
+    "target_overrides": {
+      "*": {
+        "platform.stdio-baud-rate": 115200,
+        "platform.stdio-convert-newlines": true
+      }
+    }
+}
