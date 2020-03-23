@@ -43,7 +43,7 @@ int main()
 
     MQTT::Client<MQTTNetwork, Countdown> client(mqttNetwork);
 
-    const char* hostname = "149.28.153.220";
+    const char* hostname = "192.168.1.104";
     int port = 1883;
     printf("Connecting to %s:%d\r\n", hostname, port);
     int rc = mqttNetwork.connect(hostname, port);
@@ -76,11 +76,12 @@ int main()
     {
         
         // QoS 0
-        char buf[100];
-        sprintf(buf, "Hello World!  QoS 0 message %d\r\n", count);
+        //char buf[100];
+        //sprintf(buf, "Hello World!  QoS 0 message %d\r\n", count);
+        char * buf = "{\"Temp\": 32.5 , \"Humi\": 50}";
         printf("Clien sent->%s",buf);
         message.payload = buf;
-        message.payloadlen = strlen(buf)+1;
+        message.payloadlen = strlen(buf);
         rc = client.publish(topic, message);
         count++;
         //Wait for 5 seconds.
